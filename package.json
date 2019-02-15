@@ -1,0 +1,23 @@
+{
+  "name": "Songx",
+  "version": "2.0.0",
+  "scripts": {
+    "start": "node app.js",
+    "browser-sync": "browser-sync start --proxy 127.0.0.1:7777 --ws --files 'views/*' 'public' ",
+    "nodemon": "nodemon app.js",
+    "dev": "concurrently -k \"npm run nodemon\" \"npm run browser-sync\" "
+  },
+  "author": "LorenzoBonanni, NicoloMorando",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "formidable": "^1.2.1",
+    "howler": "^2.0.15",
+    "morgan": "~1.9.0",
+    "socket.io": "^2.2.0",
+    "socket.io-stream": "^0.9.1"
+  }
+}

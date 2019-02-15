@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- Docs CSS -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent float-left">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-inner-primary"
+                aria-controls="nav-inner-primary" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Songx</a>
+        <div class="collapse navbar-collapse" id="nav-inner-primary">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-close">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#nav-inner-primary" aria-controls="nav-inner-primary" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="upload.html">Upload Song
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-lg-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+<div class="container-fluid">
+    <div class="music-player">
+        <div class="player-main">
+            <div class="main-current">
+                <div class="current-keyvisual">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329679/music-player-freebie-photo.png"
+                         alt=""/>
+                </div>
+                <div class="current-info">
+                    <h1>Blame</h1>
+                    <p>KYLE</p>
+                </div>
+            </div>
+            <div class="main-control">
+                <i class="fal fa-backward" id="prev"></i>
+                <i class="fal fa-play" id="play"></i>
+                <i class="fal fa-pause" style="display: none" id="pause"></i>
+                <i class="fal fa-forward" id="next"></i>
+                <div class="btn _timeline">
+                    <span class="current-time">0:00</span>
+                    <span class="timescope">
+                        <span class="timescope-dot"></span>
+                    </span>
+                    <span class="end-time" id="et">4:00</span>
+                </div>
+                <i class="fal fa-random" id="random"></i>
+                <i class="fal fa-repeat" id="repeat"></i>
+                <i class="fal fa-repeat-1" style="display: none" id="repeat-1"></i>
+            </div>
+        </div>
+        <ul class="player-list">
+            <!-- TODO: delete current playing song from list-->
+            <!-- TODO: put current song song data in-player main-->
+            <!-- TODO: delete current playing song from list-->
+            <!--
+                template
+                <li>
+                <img class="list-cover"
+                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329679/music-player-freebie-a1.png"/>
+                <div class="list-info">
+                    <div class="info-title">One Step At A Time</div>
+                    <div class="info-artist">BEARSON</div>
+                </div>
+            </li>
+            -->
+        </ul>
+    </div>
+</div>
+</body>
+<script src="javascripts/libraries/easytimer.min.js"></script>
+<script src="javascripts/libraries/socket.io.js"></script>
+<script src="javascripts/libraries/socket.io-stream.js"></script>
+<script src="javascripts/libraries/howler.js"></script>
+<script src="https://www.google.com/jsapi"></script>
+<script src="./javascripts/index.js"></script>
+<!-- Core -->
+<script src="./assets/vendor/jquery/jquery.min.js"></script>
+<script src="./assets/vendor/popper/popper.min.js"></script>
+<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+<!-- Theme JS -->
+<script src="./assets/js/argon.min.js"></script>
+
+</html>
