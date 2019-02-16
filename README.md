@@ -28,7 +28,9 @@ To run the project
 - Ninth commit: fixed next song and previous song
 - Tenth commit: added keyboard shortcut
 - Eleventh commit: keyboard shortcuts, song upload, implemented end time and current of the song, progress bar
-                   
+```
+### ChangeLog
+```
 -- 25/10/2018 --
 - Added css and html design of the web music player
 - Added the scripts of the player (without music folder)
