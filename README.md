@@ -6,12 +6,12 @@
 - Framework used: Argon Design System, NodeJs, BLK• Design System, Howlerjs.
 
 To run the project 
-1. with command line navigate to the project dir
-2. install required libraries using [npm](https://www.npmjs.com/get-npm):  
+1. add music directory in */public* and put some songs
+2. with command line navigate to the project dir
+3. install required libraries using [npm](https://www.npmjs.com/get-npm):  
 `npm install`
-3. install browser sync ad nodemon:  
+4. install browser sync ad nodemon:  
  `npm install -g browser-sync nodemon`
-4. install font-fontawesome pro in *public/fontawesome*
 5. run the dev script from command line:  
 `npm run dev`
 
